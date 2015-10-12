@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<filter>
+		<filter-name>consoleFilter</filter-name>
+		<filter-class>org.nutz.mvc.NutFilter</filter-class>
+		<init-param>
+			<param-name>modules</param-name>
+			<param-value>com.wucl.stdmis.MainModule</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>consoleFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>checkLoginFilter</filter-name>
+		<filter-class>com.wucl.stdmis.filter.CheckLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>checkLoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>visitorIPFilter</filter-name>
+		<filter-class>com.wucl.stdmis.filter.VisitorIPFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>visitorIPFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>	
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500.html</location>
+	</error-page>
+</web-app>

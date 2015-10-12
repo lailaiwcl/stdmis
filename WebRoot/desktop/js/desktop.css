@@ -1,0 +1,180 @@
+﻿html, body 
+{
+    width:100%;
+    height:100%;
+    overflow:visible;
+    margin:0;
+    padding:0;
+    border:0;
+    
+}
+
+.bar_top{
+    height:20px;
+    width:100%;
+    background:url(images/bar_top.png) repeat-x;
+} 
+
+.nui-desktop
+{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+}
+.nui-desktop-viewport
+{
+    background:url(images/Think_Blue.jpg) no-repeat 0 0;
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    height:100%;
+}
+.nui-desktop-taskbar
+{
+    background:url(images/taskbar.gif) repeat-x 0 0;
+    position:absolute;    
+    height:60px;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index:99999999;
+}
+.nui-desktop-modules
+{
+    margin:20px;
+}
+.nui-desktop-modules-list
+{
+    float:left;
+    padding-right:20px;
+}
+.nui-desktop-module
+{
+    width:75px;
+    height:80px;
+    margin-bottom:15px;
+    cursor:pointer;
+    overflow:hidden;
+    background:none;
+}
+.nui-desktop-module-icon
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/deskicon.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+
+.nui-desktop-module-icon-user
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/user.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+
+.nui-desktop-module-icon-role
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/role.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+
+.nui-desktop-module-icon-classManager
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/classManager.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+
+.nui-desktop-module-icon-student
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/student.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+.nui-desktop-module-icon-setup
+{
+    width:50px;
+    height:45px;
+    margin:auto;
+    background:url(images/setup.png) no-repeat 50% 50%;
+    margin-bottom:3px;
+}
+.nui-desktop-module-text
+{
+    text-align:center;
+    font-family:Tahoma,Verdana,宋体;
+    font-size:12px;    
+    color:White;
+    line-height:16px;
+}
+
+.nui-desktop-bar
+{
+    float:left;
+    width:160px;
+    height:40px;
+    background:url(images/btn.gif) no-repeat right 0;
+    cursor:pointer;
+    overflow:hidden;
+    text-decoration:none;
+    outline:none;
+}
+a:hover.nui-desktop-bar
+{
+    background:url(images/btn-over.gif) no-repeat right 0;    
+}
+.nui-desktop-bar-active
+{
+    background:url(images/btn-active.gif) no-repeat right 0;    
+}
+.nui-desktop-bar-text
+{
+    padding-left:30px;
+    padding-right:20px;
+    line-height:40px;
+    font-family:Tahoma,Verdana,宋体;
+    font-size:12px;    
+    color:White;
+}
+
+
+.nui-desktop-proxy
+{
+    position:absolute;
+    overflow:hidden;
+    z-index:100000000;
+    background:gray;
+    opacity: .2;-moz-opacity: .2;filter: alpha(opacity=20);    
+}
+
+
+/* nui-ux-window */
+.nui-ux-window
+{
+    border:solid 1px #333;
+}
+.nui-ux-window .nui-panel-header
+{
+    height:29px;
+    overflow:hidden;
+    position:relative;
+    background:url(images/header.gif) repeat-x 0 0;
+    border-bottom:solid 1px #b6bec5;
+}
+.nui-ux-window .nui-tools
+{
+    top:7px;
+    right:6px;
+}

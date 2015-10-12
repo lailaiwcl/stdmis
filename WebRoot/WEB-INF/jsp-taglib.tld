@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>自定义标签</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>ah</short-name>
+	<uri>http://wucl.stdmis.authority.com</uri>
+	<tag>
+		<name>auth</name>
+		<tag-class>com.wucl.stdmis.tag.AuthorityTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>sessionName</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>resourcesID</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>user</name>
+		<tag-class>com.wucl.stdmis.tag.SessionTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>sessionName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>fieldName</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
